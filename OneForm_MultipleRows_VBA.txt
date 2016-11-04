@@ -1,0 +1,29 @@
+Private Sub CommandButton1_Click()
+  Dim OutSH As Worksheet
+  Set OutSH = Sheets("Sheet1")
+  
+  If Task1 <> "" Then
+    
+    nextrow = OutSH.Cells(Rows.Count, 1).End(xlUp).Offset(1, 0).Row
+    OutSH.Cells(nextrow, 1).Value = bike.Value
+   OutSH.cells(nextrow,2).value = odometer.value
+  OutSH.cells(nextrow,3).value = date.value
+  Outsh.cells(nextrow,4).value = task1.value
+  Outsh.cells(nextrow,5).value = part1.value
+  outsh.cells(nextrow,6).value = cost1.value
+  End If
+  If Task2 <> "" Then
+    nextrow = OutSH.Cells(Rows.Count, 1).End(xlUp).Offset(1, 0).Row
+    OutSH.Cells(nextrow, 1).Value = bike.Value
+   OutSH.cells(nextrow,2).value = odometer.value
+  OutSH.cells(nextrow,3).value = date.value
+  Outsh.cells(nextrow,4).value = task2.value
+  Outsh.cells(nextrow,5).value = part2.value
+  outsh.cells(nextrow,6).value = cost2.value
+  End If
+  if task3 <> "" then
+   .....
+  end if  
+
+
+End Sub
